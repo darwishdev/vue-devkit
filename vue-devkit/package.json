@@ -1,0 +1,76 @@
+{
+  "name": "vue-devkit",
+  "version": "0.0.1",
+  "description": "vue-devkit is a collection of reusable, high-quality components designed to streamline your Vue.js development workflow. Focusing on flexibility and maintainability, vue-devkit primarily delivers headless components, giving you maximum control over styling and integration within your unique project designs.",
+  "module": "./dist/vue-devkit.es.js",
+  "types": "./dist/types/vuedevkit.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darwishdev/vue-devkit.git"
+  },
+  "keywords": [
+    "vue-devkit",
+    "Vue.js",
+    "Components",
+    "Headless",
+    "Reusable",
+    "UI",
+    "Library",
+    "Form",
+    "Builder",
+    "Data",
+    "List",
+    "Pagination",
+    "Sorting",
+    "Filtering",
+    "Data",
+    "Visualization",
+    "Drag",
+    "and",
+    "Drop",
+    "Conditional",
+    "Logic",
+    "Data",
+    "Validation",
+    "Customization",
+    "Flexibility",
+    "Speed",
+    "Efficiency",
+    "Maintainability",
+    "Reusability",
+    "Design",
+    "Flexibility",
+    "Developer",
+    "Experience"
+  ],
+  "author": "darwishdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darwishdev/vue-devkit/issues"
+  },
+  "homepage": "https://github.com/darwishdev/vue-devkit#readme",
+  "peerDependencies": {
+    "@formkit/vue": "^1.6.9",
+    "@tanstack/query-persist-client-core": "^5.60.6",
+    "@tanstack/query-sync-storage-persister": "^5.60.6",
+    "@tanstack/vue-query": "^5.60.6",
+    "pinia": "^2.2.4",
+    "primevue": "^4.2.2",
+    "vue": "^3.0.0",
+    "vue-i18n": "^10.0.4",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vite-plugin-dts": "^4.4.0"
+  }
+}
