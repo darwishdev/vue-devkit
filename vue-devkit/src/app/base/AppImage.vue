@@ -1,3 +1,3 @@
 <template>
-	<h2>app image</h2>
+	<h2>app image again</h2>
 </template>

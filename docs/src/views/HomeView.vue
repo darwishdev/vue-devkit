@@ -4,7 +4,7 @@ import { AppNavigation, AppImage, AppIcon } from 'vue-devkit'
 
 <template>
   <div>
-    <h2>appform</h2>
+    <h2 class="text-purple-600">appform</h2>
     <AppIcon />
     <AppImage />
     <AppNavigation id="1" />

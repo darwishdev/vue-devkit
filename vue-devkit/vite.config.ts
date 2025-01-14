@@ -18,11 +18,10 @@ export default defineConfig({
 			formats: ['es'], // Only output ESM format
 		},
 		rollupOptions: {
-			external: ['vue', 'vue-router', 'primevue'], // Externalize Vue
+			external: ['vue', 'vue-router', 'primevue', '@formkit/vue'], // Externalize Vue
 			output: {
 				globals: {
 					vue: 'Vue',
-					primevue: 'Primevue',
 					'vue-router': 'VueRouter',
 				},
 			},

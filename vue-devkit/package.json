@@ -58,9 +58,13 @@
   "homepage": "https://github.com/darwishdev/vue-devkit#readme",
   "peerDependencies": {
     "@formkit/vue": "^1.6.9",
+    "@formkit/icons": "^1.6.9",
     "@tanstack/query-persist-client-core": "^5.60.6",
+    "dexie": "^4.0.10",
     "@tanstack/query-sync-storage-persister": "^5.60.6",
     "@tanstack/vue-query": "^5.60.6",
+    "@primevue/themes": "^4.2.5",
+    "tailwindcss-primeui": "^0.4.0",
     "pinia": "^2.2.4",
     "primevue": "^4.2.2",
     "vue": "^3.0.0",
