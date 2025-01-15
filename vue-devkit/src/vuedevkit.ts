@@ -7,14 +7,13 @@ import type { VueDevkitConfig } from "./types";
 import { resolveApiEndpoint } from "./pkg/TypeUtils";
 import { db } from "./pkg/database/DexieDB";
 import Aura from '@primevue/themes/aura';
-
 import { plugin, defaultConfig, FormKit, DefaultConfigOptions } from '@formkit/vue'
 import { genesisIcons } from '@formkit/icons'
 import { ar, en } from '@formkit/i18n'
-import { rootClasses } from '../formkit.theme'
 import queryClient from './pkg/plugins/tanstack.config'
 import { VueQueryPlugin } from '@tanstack/vue-query'
-export { AppBtn, AppIcon, AppImage, AppHeader, AppNavigation, AppSidebar, AppForm, Datalist };
+import { createPinia } from "pinia";
+export { AppBtn, AppIcon, AppImage, AppHeader, AppNavigation, AppSidebar, AppForm, Datalist, VueDevkitConfig };
 /**
  * Deeply merges two objects.
  * @param target - The target object (default values).
@@ -58,7 +57,7 @@ const initIcons = async (app: App, { apiClient, iconList, primevueConfig, formki
 			preset: Aura,
 			options: {
 				prefix: 'p',
-				darkModeSelector: '.dark-mode',
+				darkModeSelector: '.dark',
 				cssLayer: {
 					name: 'primevue',
 					order: 'tailwind-base, primevue, tailwind-utilities'
@@ -72,9 +71,7 @@ const initIcons = async (app: App, { apiClient, iconList, primevueConfig, formki
 		icons: {
 			...genesisIcons
 		},
-		config: {
-			rootClasses
-		}
+
 	}
 	app.use(PrimeVue, deepMerge(defaulePrimvueConfig, primevueConfig))
 	app.use(plugin, defaultConfig(deepMerge(defaultFormkitConfg, formkitConfig)))

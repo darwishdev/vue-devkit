@@ -4,7 +4,23 @@
   "description": "vue-devkit is a collection of reusable, high-quality components designed to streamline your Vue.js development workflow. Focusing on flexibility and maintainability, vue-devkit primarily delivers headless components, giving you maximum control over styling and integration within your unique project designs.",
   "module": "./dist/vue-devkit.es.js",
   "types": "./dist/types/vuedevkit.d.ts",
+  "style": "./dist/style.css",
+  "tailwind": "./tailwind.preset.js",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/vuedevkit.d.ts",
+        "default": "./dist/vue-devkit.es.js"
+      }
+    },
+    "./style": {
+      "import": {
+        "types": "./dist/style.d.ts",
+        "default": "./dist/style.css"
+      }
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
@@ -57,24 +73,29 @@
   },
   "homepage": "https://github.com/darwishdev/vue-devkit#readme",
   "peerDependencies": {
-    "@formkit/vue": "^1.6.9",
     "@formkit/icons": "^1.6.9",
+    "@formkit/vue": "^1.6.9",
+    "@primevue/themes": "^4.2.5",
     "@tanstack/query-persist-client-core": "^5.60.6",
-    "dexie": "^4.0.10",
     "@tanstack/query-sync-storage-persister": "^5.60.6",
     "@tanstack/vue-query": "^5.60.6",
-    "@primevue/themes": "^4.2.5",
-    "tailwindcss-primeui": "^0.4.0",
-    "pinia": "^2.2.4",
+    "dexie": "^4.0.10",
     "primevue": "^4.2.2",
+    "tailwindcss": "^3.0.0",
+    "tailwindcss-primeui": "^0.4.0",
+    "pinia": "^2.0.0",
     "vue": "^3.0.0",
-    "vue-i18n": "^10.0.4",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
     "vite": "^6.0.7",
-    "vite-plugin-dts": "^4.4.0"
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-dts": "^4.4.0",
+    "vite-plugin-static-copy": "^2.2.0"
   }
 }

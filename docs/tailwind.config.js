@@ -5,8 +5,7 @@ export default {
     "./app.vue",
     "./src/formkit.theme.ts" // <-- add your theme file
   ],
-
-  darkMode: 'dark-mode',
+  darkMode: 'class',
   theme: {
     extend: {},
   },

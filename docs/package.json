@@ -21,11 +21,11 @@
     "@tanstack/query-sync-storage-persister": "^5.60.6",
     "@tanstack/vue-query": "^5.60.6",
     "dexie": "^4.0.10",
-    "pinia": "^2.2.4",
+    "pinia": "^2.3.0",
     "primevue": "^4.2.2",
     "tailwindcss-primeui": "^0.4.0",
     "vue": "^3.5.13",
-    "vue-i18n": "^10.0.4",
+    "vue-i18n": "^10.0.5",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {

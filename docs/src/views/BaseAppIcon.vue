@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
 
 const schema = [
   {
@@ -9,10 +11,11 @@ const schema = [
   }
 ]
 const submitHandler = () => null
+const { t } = useI18n()
 </script>
 
 <template>
-  <h2>heelo</h2>
+  <h2>hi : {{ t('hello') }}</h2>
   <FormKit type="form" :actions="true" :onsubmit="submitHandler" :submit-attrs="{
     inputClass: 'my-input-class',
     wrapperClass: 'my-wrapper-class',

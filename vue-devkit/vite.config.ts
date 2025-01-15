@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import dts from 'vite-plugin-dts'; // Plugin to generate .d.ts files
 
+import dts from 'vite-plugin-dts'; // Plugin to generate .d.ts files
 export default defineConfig({
 	plugins: [
 		vue(),
@@ -10,7 +10,11 @@ export default defineConfig({
 			outDir: 'dist/types', // Output directory for .d.ts files
 		}),
 	],
+	css: {
+		postcss: './postcss.config.js', // Ensure PostCSS is used
+	},
 	build: {
+		cssCodeSplit: true,
 		lib: {
 			entry: './src/vuedevkit.ts', // Entry point for your library
 			name: 'VueDevkit', // Global variable name for your library
