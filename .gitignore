@@ -1,5 +1,7 @@
-./*/node_modules
-./*/.env.local
-./*/.env.development
-./*/dist
+./docs/node_modules
+./docs/dist
+./vue-devkit/node_modules
+./vue-devkit/dist
+./docs-devkit/.env.local
+./docs/.env.development
 
